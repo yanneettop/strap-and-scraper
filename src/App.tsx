@@ -52,7 +52,7 @@ function Navigation() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-2">
               <span className="font-display text-xl lg:text-2xl text-brand-cream tracking-wide">
-                Strap <span className="text-brand-gold">&</span> Scraper
+                The <span style={{ color: '#c9a962' }}>Groom</span> Room
               </span>
             </a>
 
@@ -138,7 +138,7 @@ function HeroSection() {
       <div className="absolute inset-0">
         <img 
           src="/hero-bg.jpg" 
-          alt="Strap and Scraper Barbershop"
+          alt="The Groom Room Barbershop"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-dark/40 to-brand-dark" />
@@ -146,13 +146,13 @@ function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-20">
-        <p className="text-brand-gold text-sm sm:text-base tracking-[0.3em] uppercase mb-4 animate-fade-in-up">
-          Shoreditch, London
+        <p className="text-brand-gold text-base sm:text-lg tracking-[0.35em] uppercase mb-4 animate-fade-in-up" style={{letterSpacing: '0.25em'}}>
+          SHOREDITCH, LONDON
         </p>
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-brand-cream mb-6 leading-tight animate-fade-in-up stagger-1">
+        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-brand-cream mb-6 leading-tight animate-fade-in-up stagger-1" style={{fontWeight: 600, letterSpacing: '-0.01em'}}>
           The Cut You
           <br />
-          <span className="text-brand-gold">Deserve</span>
+          <span className="text-brand-gold block text-5xl sm:text-6xl md:text-7xl lg:text-8xl" style={{fontWeight: 700, letterSpacing: '-0.01em'}}>Deserve</span>
         </h1>
         <p className="text-brand-muted text-base sm:text-lg md:text-xl max-w-xl mx-auto mb-10 animate-fade-in-up stagger-2">
           Shoreditch barbering since 2018. Consultation first. No rushed cuts. Product that works.
@@ -697,7 +697,7 @@ function ContactSection() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Strap and Scraper Location"
+              title="The Groom Room Location"
             />
           </div>
         </div>
@@ -716,7 +716,7 @@ function Footer() {
           <div>
             <a href="#" className="inline-block mb-4">
               <span className="font-display text-2xl text-brand-cream">
-                Strap <span className="text-brand-gold">&</span> Scraper
+                The <span style={{ color: '#c9a962' }}>Groom</span> Room
               </span>
             </a>
             <p className="text-brand-muted text-sm">
