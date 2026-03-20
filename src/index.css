@@ -217,6 +217,37 @@
               0 0 0 1px rgba(201, 169, 98, 0.1);
 }
 
+.light-panel {
+  position: relative;
+  isolation: isolate;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light-panel::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), transparent 34%, transparent 72%, rgba(201, 169, 98, 0.12));
+  opacity: 0;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.light-panel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(140, 109, 53, 0.26);
+  box-shadow: 0 34px 90px -48px rgba(36, 26, 20, 0.42);
+}
+
+.light-panel:hover::before {
+  opacity: 1;
+}
+
 /* ── Gold shimmer text ── */
 .text-shimmer {
   background: linear-gradient(
